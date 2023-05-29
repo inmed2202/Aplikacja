@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "580540054077",
+    "project_id": "application-feca8",
+    "storage_bucket": "application-feca8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580540054077:android:44a4852a7f85c2eae94854",
+        "android_client_info": {
+          "package_name": "com.example.loginapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580540054077-7mlfv1hhq4kcb2gpkldsv3glolg5tgum.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.loginapplication",
+            "certificate_hash": "ffb6288b8d7b72acacb13ac597fa2076e7359de8"
+          }
+        },
+        {
+          "client_id": "580540054077-o405o48e719o3kjm373f4ug30lnlnvp4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSzv0ivVdoAAAA7eQa-l_tbo2KqDWit28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580540054077-al8ks6bcpsfh2rhve9g45p5j6qihkvqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

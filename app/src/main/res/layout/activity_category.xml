@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            app:srcCompat="@drawable/gym" />
+
+        <ImageButton
+            android:id="@+id/categoryback_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#00000000"
+            android:tint="@color/app_theme_light"
+            app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#00FFFFFF"
+            android:tint="@color/app_theme_light"
+            app:srcCompat="@drawable/baseline_notifications_none_24" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#4D3C72B6">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="168dp"
+                android:layout_marginTop="180dp"
+                android:text="Dodaj zdjęcie"
+                android:textColor="@color/app_theme_light"
+                android:textSize="10sp" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tint="#00FFFFFF"
+            app:srcCompat="@drawable/baseline_add_a_photo_24" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passes_btn"
+        android:layout_width="391dp"
+        android:layout_height="45dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/app_theme"
+        app:boxStrokeWidth="0dp"
+        app:hintAnimationEnabled="false"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"/>
+
+    <TextView
+        android:id="@+id/passes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/baseline_passes_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/app_theme"
+        android:text="Moje karnety"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/passes_btn"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/categorysucces_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/baseline_done_all_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/app_theme"
+        android:text="Moje postępy"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passes" />
+
+    <TextView
+        android:id="@+id/categorytrener_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/baseline_directions_run_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/app_theme"
+        android:text="Mój trener"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categorysucces_btn" />
+
+    <TextView
+        android:id="@+id/categorydiet_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/baseline_food_bank_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/app_theme"
+        android:text="Mój dietetyk"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categorytrener_btn" />
+
+    <TextView
+        android:id="@+id/categoryloyal_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/baseline_price_change_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/app_theme"
+        android:text="Programy lojalnościowe"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categorydiet_btn" />
+
+    <TextView
+        android:id="@+id/categoryanalysis_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/baseline_medical_services_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/app_theme"
+        android:text="Moje badania"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryloyal_btn" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/baseline_logout_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/purple_500"
+        android:text="Wyloguj się"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:drawableLeft="@drawable/baseline_privacy_tip_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/purple_500"
+        android:text="Prywatność i bezpieczeństwo"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/categorydata_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:drawableLeft="@drawable/baseline_supervised_user_circle_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/purple_500"
+        android:text="Twoje dane"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

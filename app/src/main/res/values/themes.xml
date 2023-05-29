@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LoginApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.LoginApplication" parent="Base.Theme.LoginApplication" />
+
+    <style name="custom_card_view_style" parent="Widget.MaterialComponents.CardView">
+
+        <item name="shapeAppearanceOverlay">@style/custom_card_view</item>
+    </style>
+
+    <style name="custom_card_view" parent="">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">48dp</item>
+        <item name="cornerSizeTopLeft">48dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+
+    </style>
+
+    <style name="quick_access_view_style" parent="Widget.MaterialComponents.CardView">
+
+        <item name="shapeAppearanceOverlay">@style/quick_access_view</item>
+    </style>
+
+    <style name="quick_access_view" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">36dp</item>
+        <item name="cornerSizeTopRight">36dp</item>
+        <item name="cornerSizeBottomLeft">36dp</item>
+        <item name="cornerSizeBottomRight">36dp</item>
+        <item name="colorOnBackground">@color/purple_700</item>
+    </style>
+    <style name="Theme.LoginApplication.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.LoginApplication.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.LoginApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    
+
+
+    
+</resources>
