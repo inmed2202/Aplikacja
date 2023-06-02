@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatedEventActivity">
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="391dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/eventNameFinal"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Nazwa:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/enteredName"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:textSize="24sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="391dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
+
+        <TextView
+            android:id="@+id/dateFinal"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Data:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/enteredDate"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="391dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow2">
+
+        <TextView
+            android:id="@+id/timeFinale"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Czas:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/enteredTime"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="391dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow3" >
+
+        <TextView
+            android:id="@+id/DescriptionFinal"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Opis:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/enteredDesc"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="393dp"
+        android:layout_height="70dp"
+        android:background="@color/teal_700"
+        android:backgroundTint="@color/teal_700"
+        android:text="Nadchodzące zdarzenie"
+        android:textAlignment="center"
+        android:textColor="@color/ab_theme_light"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
