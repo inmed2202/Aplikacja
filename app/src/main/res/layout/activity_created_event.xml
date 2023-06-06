@@ -121,7 +121,7 @@
         android:backgroundTint="@color/teal_700"
         android:text="Nadchodzące zdarzenie"
         android:textAlignment="center"
-        android:textColor="@color/ab_theme_light"
+        android:textColor="@color/app_theme_light"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/tableRow"
         app:layout_constraintEnd_toEndOf="parent"

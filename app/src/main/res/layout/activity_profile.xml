@@ -113,7 +113,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/your_pases"
+        android:id="@+id/your_passes"
         android:layout_width="90dp"
         android:layout_height="100dp"
         android:layout_marginStart="36dp"
@@ -140,12 +140,12 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/your_succes"
+        android:id="@+id/your_success"
         android:layout_width="90dp"
         android:layout_height="100dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintStart_toEndOf="@+id/your_pases"
+        app:layout_constraintStart_toEndOf="@+id/your_passes"
         app:layout_constraintTop_toBottomOf="@+id/category_h">
 
         <Button
@@ -203,7 +203,7 @@
         android:text="Więcej"
         android:textColor="@color/purple_700"
         android:textStyle="normal"
-        app:layout_constraintBottom_toTopOf="@+id/your_succes"
+        app:layout_constraintBottom_toTopOf="@+id/your_success"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText

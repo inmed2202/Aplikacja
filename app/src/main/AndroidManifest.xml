@@ -13,6 +13,9 @@
         android:theme="@style/Theme.LoginApplication"
         tools:targetApi="31">
         <activity
+            android:name=".PassInfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".YourDataActivity"
             android:exported="false" />
         <activity
@@ -28,20 +31,19 @@
             android:name=".TrenerActivity"
             android:exported="false" />
         <activity
-            android:name=".SuccesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PassesActivity"
+            android:name=".SuccessActivity"
             android:exported="false" />
         <activity
             android:name=".CategoryActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name="com.example.myapplication.PassesActivity"
             android:exported="false" />
         <activity
-            android:name=".profile_activity"
-            android:exported="false" />
+            android:name=".ProfileActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".profile_activity" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".nav_menu"
             android:exported="false"

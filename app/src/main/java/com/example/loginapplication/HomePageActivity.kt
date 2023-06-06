@@ -92,8 +92,8 @@ class HomePageActivity : AppCompatActivity() {
                     }
 
                     R.id.nav_logout -> {
-                        Toast.makeText(applicationContext, "Clicked Logout", Toast.LENGTH_SHORT)
-                            .show()
+                        val intent_signin = Intent(this, MainActivity::class.java)
+                        startActivity(intent_signin)
                     }
                 }
 

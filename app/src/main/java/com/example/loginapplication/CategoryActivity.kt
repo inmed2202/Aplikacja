@@ -1,16 +1,10 @@
 package com.example.loginapplication
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.appcompat.widget.Toolbar
-import androidx.drawerlayout.widget.DrawerLayout
 import com.example.loginapplication.databinding.ActivityCategoryBinding
-import com.example.loginapplication.databinding.ActivityProfileBinding
-import com.google.android.material.navigation.NavigationView
+import com.example.myapplication.PassesActivity
 
 class CategoryActivity : AppCompatActivity() {
 
@@ -22,7 +16,7 @@ class CategoryActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.passes.setOnClickListener {
-            val intent = Intent(this , PassesActivity::class.java)
+            val intent = Intent(this, PassesActivity::class.java)
             startActivity(intent)
         }
 
@@ -32,7 +26,7 @@ class CategoryActivity : AppCompatActivity() {
         }
 
         binding.categorysuccesBtn.setOnClickListener {
-            val intent = Intent(this, SuccesActivity::class.java)
+            val intent = Intent(this, SuccessActivity::class.java)
             startActivity(intent)
         }
 

@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SuccesActivity">
+    tools:context=".SuccessActivity">
 
     <TextView
         android:id="@+id/textView22"
@@ -15,7 +15,7 @@
         android:layout_marginTop="48dp"
         android:text="Tu będziesz mógł zobaczyć listę swoich postępów."
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/your_succes"
+        app:layout_constraintStart_toEndOf="@+id/your_success"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
@@ -69,6 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="168dp"
                 android:layout_marginTop="180dp"
+                android:paddingLeft="12dp"
                 android:text="Dodaj zdjęcie"
                 android:textColor="@color/app_theme_light"
                 android:textSize="10sp" />
@@ -107,7 +108,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView7" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/your_succes"
+        android:id="@+id/your_success"
         android:layout_width="90dp"
         android:layout_height="100dp"
         android:layout_marginStart="24dp"
