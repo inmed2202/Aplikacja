@@ -55,24 +55,20 @@
                 android:layout_height="250dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="140dp"
-                app:srcCompat="@drawable/obwodowyfull" />
+                app:srcCompat="@drawable/funkcjonalnyfull" />
 
-            <EditText
-                android:id="@+id/editTextTextMultiLine4"
-                android:layout_width="370dp"
+            <TextView
+                android:id="@+id/textView158"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:layout_marginTop="22dp"
-                android:ems="10"
-                android:gravity="end"
-                android:inputType="textMultiLine"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
                 android:text="Trening funkcjonalny to rodzaj intensywnych ćwiczeń, których celem jest wszechstronne wzmocnienie mięśni bez rozbudowywania masy mięśniowej. Polega na imitowaniu ruchów, które wykonujemy na co dzień przy zwykłych czynnościach, ale w szybszym tempie i z wieloma powtórzeniami. Sprawdź, jakie korzyści możesz odnieść uprawiając fitness funkcjonalny. Trening funkcjonalny, w odróżnieniu od tradycyjnych ćwiczeń na siłowni, skupia się na naśladowaniu ruchów wykonywanych przez nas w życiu codziennym. Dzięki temu poszczególne grupy mięśniowe współdziałają ze sobą, a my zwiększamy przy okazji naszą koordynację i gibkość. Trening funkcjonalny składa się z ćwiczeń podobnych do porannego wstawania z łóżka, sięgania po coś, np. wyciągania ręki po mikser stojący na najwyższej półce w kuchni, podnoszenia i unoszenia przedmiotów, wskakiwania na schody – czyli najczęściej wykonywanych przez nas ruchów w ciągu dnia. "
-                android:textAlignment="center"
-                android:textSize="14sp"
-                android:textStyle="normal" />
+                android:textAlignment="center" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/funkcjonalnyzapisBtn"
                 android:layout_width="230dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="80dp"

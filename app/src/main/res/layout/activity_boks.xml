@@ -57,22 +57,17 @@
                 android:layout_marginTop="140dp"
                 app:srcCompat="@drawable/boksfull" />
 
-            <EditText
-                android:id="@+id/editTextTextMultiLine5"
+            <TextView
+                android:id="@+id/textView161"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:layout_marginTop="22dp"
-                android:ems="10"
-                android:gravity="end"
-                android:inputType="textMultiLine"
-                android:text="Boks to sport, w którym dwóch zawodników walczy ze sobą wyłącznie przy użyciu pięści na kwadratowym ringu o boku długości od 4,88 do 7,32 m. Zabronione są ciosy poniżej pasa, a także uderzanie głową, kolanami czy łokciami, jak również wyprowadzanie ciosów w plecy, tył głowy i nerki. Walka może trwać maksymalnie 12 rund, z których każda trwa po 2–3 minuty, z kolei przerwy między rundami trwają zazwyczaj po 60 sekund. Nad przebiegiem każdej walki powinien czuwać wykwalifikowany sędzia główny, który może być wspierany przez kilku arbitrów liniowych. Walka może trwać pełną długość – po ukończeniu ostatniej rundy sędziowie przyznają pięściarzom punkty za każdą rundę i zwycięża ten, który uzyskał ich więcej. Walka jednak może również zostać zakończona przed czasem. Powalony na ring w wyniku ciosu bokser ma 10 sekund na podniesienie się, w przeciwnym razie przegrywa przez nokaut. Sędzia może także podjąć decyzję o zakończeniu pojedynku przez nokaut techniczny, kiedy jeden z zawodników nie jest w stanie kontynuować walki ze względu na kontuzję lub z innych przyczyn."
-                android:textAlignment="center"
-                android:textSize="14sp"
-                android:textStyle="normal" />
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:text="Boks to sport, w którym dwóch zawodników walczy ze sobą wyłącznie przy użyciu pięści na kwadratowym ringu o boku długości od 4,88 do 7,32 m. Zabronione są ciosy poniżej pasa, a także uderzanie głową, kolanami czy łokciami, jak również wyprowadzanie ciosów w plecy, tył głowy i nerki. Walka może trwać maksymalnie 12 rund, z których każda trwa po 2–3 minuty, z kolei przerwy między rundami trwają zazwyczaj po 60 sekund. Nad przebiegiem każdej walki powinien czuwać wykwalifikowany sędzia główny, który może być wspierany przez kilku arbitrów liniowych. Walka może trwać pełną długość – po ukończeniu ostatniej rundy sędziowie przyznają pięściarzom punkty za każdą rundę i zwycięża ten, który uzyskał ich więcej. Walka jednak może również zostać zakończona przed czasem. Powalony na ring w wyniku ciosu bokser ma 10 sekund na podniesienie się, w przeciwnym razie przegrywa przez nokaut. Sędzia może także podjąć decyzję o zakończeniu pojedynku przez nokaut techniczny, kiedy jeden z zawodników nie jest w stanie kontynuować walki ze względu na kontuzję lub z innych przyczyn." />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/bokszapisBtn"
                 android:layout_width="230dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="80dp"

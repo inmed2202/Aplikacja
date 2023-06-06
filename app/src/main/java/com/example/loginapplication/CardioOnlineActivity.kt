@@ -5,17 +5,18 @@ import android.os.Bundle
 import android.webkit.WebView
 import android.webkit.WebViewClient
 
-class ObwodowyOnlineActivity : AppCompatActivity() {
+class CardioOnlineActivity : AppCompatActivity() {
+
     private lateinit var webView: WebView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_obwodowy_online)
+        setContentView(R.layout.activity_cardio_online)
 
-        webView = findViewById(R.id.obwodowy_online_film)
+        webView = findViewById(R.id.cardio_online_film)
         webView.webViewClient = WebViewClient()
 
-        val videoId = "Bh-9MciTr5U"
+        val videoId = "8Wb9yptugnA"
         val url = "https://www.youtube.com/embed/$videoId"
 
         webView.settings.javaScriptEnabled = true

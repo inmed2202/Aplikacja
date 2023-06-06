@@ -57,22 +57,18 @@
                 android:layout_marginTop="140dp"
                 app:srcCompat="@drawable/jogafull" />
 
-            <EditText
-                android:id="@+id/editTextTextMultiLine7"
+            <TextView
+                android:id="@+id/textView163"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="22dp"
-                android:ems="10"
-                android:gravity="end"
-                android:inputType="textMultiLine"
+                android:layout_marginTop="22sp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
                 android:text="Joga jest zaliczana do grupy zajęć mentalnych. Wywodzi się z Indii. To właśnie tam odkryto liczne znaleziska archeologiczne przedstawiające postacie znajdujące się w pozycjach zaczerpniętych z jogi, jednak badacze nie są w stanie jednoznacznie określić, kiedy dokładnie powstała joga.  Joga łączy ze sobą ćwiczenia umysłowe, oddechowe i fizyczne. Jej regularne praktykowanie prowadzi do rozwoju duchowego, lepszego poznania siebie i otaczającej rzeczywistości. Ponadto służy poprawie elastyczności mięśni oraz mobilności. Z kolei w kontekście religijno-filozoficznym wykorzystywana jest do uwolnienia jogina z kręgu śmierci i życia. Obecnie wiele religii (np. buddyzm) traktuje jogę jako nieodłączny element praktyki religijnej."
-                android:textAlignment="center"
-                android:textSize="14sp"
-                android:textStyle="normal" />
+                android:textAlignment="center" />
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/jogazapisBtn"
                 android:layout_width="230dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="80dp"

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
-        android:backgroundTint="@color/app_theme"
+        android:backgroundTint="@color/purple_500"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,21 +26,12 @@
         android:layout_marginStart="2dp"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="2dp"
-        android:backgroundTint="@color/app_theme"
+        android:backgroundTint="@color/purple_500"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2">
-
-        <TextView
-            android:id="@+id/addphoto_h"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="290dp"
-            android:layout_marginTop="70dp"
-            android:text="Dodaj zdjęcie"
-            android:textColor="@color/app_theme_light" />
 
         <TextView
             android:id="@+id/edit_h1"
@@ -61,24 +52,13 @@
             android:layout_marginBottom="16dp"
             android:background="@color/app_theme_light" />
 
-        <ImageView
-            android:id="@+id/addphotoBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="300dp"
-            android:layout_marginTop="15dp"
-            android:minWidth="60dp"
-            android:minHeight="60dp"
-            android:tint="@color/app_theme_light"
-            app:srcCompat="@drawable/baseline_add_a_photo_24" />
-
     </androidx.cardview.widget.CardView>
 
     <ImageButton
         android:id="@+id/notifications_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/app_theme"
+        android:backgroundTint="@color/purple_500"
         android:tint="@color/app_theme_light"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
         app:layout_constraintEnd_toEndOf="@+id/toolbar2"
@@ -109,7 +89,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="75dp"
             android:text="Twoje dane"
-            android:textColor="@color/purple_200" />
+            android:textColor="@color/purple_700" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -136,7 +116,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="75dp"
             android:text="Moje karnety"
-            android:textColor="@color/purple_200" />
+            android:textColor="@color/purple_700" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -164,7 +144,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="76dp"
             android:text="Moje postępy"
-            android:textColor="@color/purple_200"
+            android:textColor="@color/purple_700"
             android:textSize="13sp" />
     </androidx.cardview.widget.CardView>
 
@@ -175,7 +155,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:text="Kategorie"
-        android:textColor="@color/app_theme"
+        android:textColor="@color/purple_200"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/your_data"
@@ -189,7 +169,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:text="Coś tam coś tam"
-        android:textColor="@color/app_theme"
+        android:textColor="@color/purple_200"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
