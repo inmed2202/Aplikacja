@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrenningsActivity">
+
+    <TextView
+        android:id="@+id/trening_h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Treningi"
+        android:textColor="@color/purple_500"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:tint="@color/app_theme_light"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_search_24" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="391dp"
+        android:layout_height="702dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trening_h1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="-700dp">
+
+            <TextView
+                android:id="@+id/trening_offline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:text="Treningi offline:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/dlapan_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                app:srcCompat="@drawable/treningi1" />
+
+            <TextView
+                android:id="@+id/dlapan_h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="-130dp"
+                android:text="Dla Pań"
+                android:textColor="@color/app_theme_light"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/panit1"
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="130dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/h1panie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Trening siłowy"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/panie_more1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+                <ImageView
+                    android:id="@+id/panie_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/silowy1icon" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/h2panie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Trening cardio"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/panie_more2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+                <ImageView
+                    android:id="@+id/panie_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/cardioicon" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/h3panie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Trening obwodowy"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/panie_more3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+                <ImageView
+                    android:id="@+id/panie_img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/obwodowyicon" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/h4panie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Trening funkcjonalny"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/panie_more4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+                <ImageView
+                    android:id="@+id/panie_img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/funkcjonalnyicon" />
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/dlapanow_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/treningi2" />
+
+            <TextView
+                android:id="@+id/dlapanow_h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="-130dp"
+                android:text="Dla Panów"
+                android:textColor="@color/app_theme_light"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="130dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/h1pany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Trening siłowy"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/pany_more1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+                <ImageView
+                    android:id="@+id/pany_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/silowy1icon" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/h2pany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Trening cardio"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/pany_more2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+                <ImageView
+                    android:id="@+id/pany_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/cardioicon" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/h3pany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Trening obwodowy"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/pany_more3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+                <ImageView
+                    android:id="@+id/pany_img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/obwodowyicon" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/h4pany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Trening funkcjonalny"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/pany_more4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+                <ImageView
+                    android:id="@+id/pany_img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/funkcjonalnyicon" />
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/inne1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/treningi3" />
+
+            <TextView
+                android:id="@+id/inne_h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="-110dp"
+                android:text="Inne"
+                android:textColor="@color/app_theme_light"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="130dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/inne_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Boks"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/inne_more1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+                <ImageView
+                    android:id="@+id/inne_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/boksicon" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/inne2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Crossfit"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/inne_more2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+                <ImageView
+                    android:id="@+id/inne_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/crossfiticon" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/inne3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Joga"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/inne_more3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+                <ImageView
+                    android:id="@+id/inne_img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/jogaicon" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/inne4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="170dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Stratching"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/inne_more4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+                <ImageView
+                    android:id="@+id/inne_img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/stratchingicon" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="50dp"
+                android:text="Treningi online:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/online1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Trening obwodowy"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/download1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_circle_down_24" />
+
+                <ImageView
+                    android:id="@+id/online_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/obwodowyicon" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/online2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Trening cardio"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/download2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_circle_down_24" />
+
+                <ImageView
+                    android:id="@+id/online_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/cardioicon" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/panit"
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/online3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Trening siłowy"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/download3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_circle_down_24" />
+
+                <ImageView
+                    android:id="@+id/online_img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/silowy1icon" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/online4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Trening funkcjonalny"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/download4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_circle_down_24" />
+
+                <ImageView
+                    android:id="@+id/online_img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/funkcjonalnyicon" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/online5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="170dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Stratching"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/download5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_circle_down_24" />
+
+                <ImageView
+                    android:id="@+id/online_img5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/stratchingicon" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/online6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Joga"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/download6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_circle_down_24" />
+
+                <ImageView
+                    android:id="@+id/online_img6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/jogaicon" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/online7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Boks"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/download7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_circle_down_24" />
+
+                <ImageView
+                    android:id="@+id/online_img7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/boksicon" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#6FC8C8C8"
+                app:cardCornerRadius="2dp">
+
+                <TextView
+                    android:id="@+id/online8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Crossfit"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/download8"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="320dp"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/black"
+                    app:srcCompat="@drawable/baseline_arrow_circle_down_24" />
+
+                <ImageView
+                    android:id="@+id/online_img8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/crossfiticon" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
