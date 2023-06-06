@@ -2,11 +2,10 @@ package com.example.loginapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.loginapplication.R
 
-class PassesActivity : AppCompatActivity() {
+class TrenningsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_passes)
+        setContentView(R.layout.activity_trennings)
     }
 }

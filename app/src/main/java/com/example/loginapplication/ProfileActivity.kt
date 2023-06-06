@@ -1,8 +1,10 @@
 package com.example.loginapplication
 
 import android.content.Intent
+import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
@@ -15,16 +17,20 @@ class ProfileActivity : AppCompatActivity() {
     lateinit var toggle : ActionBarDrawerToggle
     private lateinit var binding : ActivityProfileBinding
 
+    companion object {
+        private const val REQUEST_IMAGE_CAPTURE = 1
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        //setContentView(R.layout.activity_profile)
 
-        /*val toolbar1: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar1)
-
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
         val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayout)
         val navView: NavigationView = findViewById(R.id.nav_view)
+
 
 
         toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
@@ -41,8 +47,11 @@ class ProfileActivity : AppCompatActivity() {
                 }
 
                 R.id.nav_training -> {
-                    Toast.makeText(applicationContext, "Clicked Training", Toast.LENGTH_SHORT)
-                        .show()
+                    val intent_trennings = Intent(this , TrenningsActivity::class.java)
+                    startActivity(intent_trennings)
+
+                    /*Toast.makeText(applicationContext, "Clicked Training", Toast.LENGTH_SHORT)
+                        .show()*/
                 }
 
                 R.id.nav_diet -> {
@@ -56,8 +65,11 @@ class ProfileActivity : AppCompatActivity() {
                 }
 
                 R.id.nav_profile -> {
-                    val intent = Intent(this , CategoryActivity::class.java)
-                    startActivity(intent)
+                    val intent_profile = Intent(this , ProfileActivity::class.java)
+                    startActivity(intent_profile)
+
+                    /*val intent = Intent(this , ProfileActivity::class.java)
+                    startActivity(intent)*/
                     /*Toast.makeText(applicationContext, "Clicked Profile", Toast.LENGTH_SHORT)
                         .show()*/
                 }
@@ -79,7 +91,10 @@ class ProfileActivity : AppCompatActivity() {
             }
 
             true
-        }*/
+
+
+        }
+
 
         binding.categorymoreBtn.setOnClickListener {
             val intent = Intent(this , CategoryActivity::class.java)
@@ -91,10 +106,10 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.yourPases.setOnClickListener {
+        /*binding.yourPases.setOnClickListener {
             val intent = Intent(this, PassesActivity::class.java)
             startActivity(intent)
-        }
+        }*/
 
         binding.yourSucces.setOnClickListener {
             val intent = Intent(this, SuccesActivity::class.java)
@@ -105,5 +120,30 @@ class ProfileActivity : AppCompatActivity() {
             val intent = Intent(this, YourDataActivity::class.java)
             startActivity(intent)
         }
+
+        binding.addphotoBtn.setOnClickListener {
+            dispatchTakePictureIntent()
+        }
+
+
     }
+
+    private fun dispatchTakePictureIntent() {
+        val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+        if (takePictureIntent.resolveActivity(packageManager) != null) {
+            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+            val imageBitmap = data?.extras?.get("data") as Bitmap
+            binding.addphotoBtn.setImageBitmap(imageBitmap)
+        }
+    }
+
+
+
 }

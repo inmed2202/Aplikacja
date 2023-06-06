@@ -62,7 +62,7 @@
             android:background="@color/app_theme_light" />
 
         <ImageView
-            android:id="@+id/addphoto_btn"
+            android:id="@+id/addphotoBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="300dp"

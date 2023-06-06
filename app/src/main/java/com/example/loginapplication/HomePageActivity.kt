@@ -1,46 +1,38 @@
 package com.example.loginapplication
 
+import android.content.ClipData
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.os.Bundle
-import android.widget.ImageButton
-import android.widget.TextView
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.loginapplication.databinding.ActivityHomePageBinding
-import com.example.loginapplication.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class HomePageActivity : AppCompatActivity() {
 
     lateinit var toggle : ActionBarDrawerToggle
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var binding : ActivityHomePageBinding
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var itemList: List<Item>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomePageBinding.inflate(layoutInflater)
-        //setContentView(binding.root)
-        setContentView(R.layout.activity_home_page)
+        setContentView(binding.root)
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-
-            /*firebaseAuth = FirebaseAuth.getInstance()
-
-        val displayName = intent.getStringExtra("name")
-
-        findViewById<TextView>(R.id.textView).text = "Witaj, " + "\n" + displayName
-
-        findViewById<ImageButton>(R.id.logout_btn).setOnClickListener {
-            firebaseAuth.signOut()
-            startActivity(Intent(this, MainActivity::class.java))
-        }*/
             val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayout)
             val navView: NavigationView = findViewById(R.id.nav_view)
+
 
 
             toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
@@ -57,8 +49,11 @@ class HomePageActivity : AppCompatActivity() {
                     }
 
                     R.id.nav_training -> {
-                        Toast.makeText(applicationContext, "Clicked Training", Toast.LENGTH_SHORT)
-                            .show()
+                        val intent_trennings = Intent(this , TrenningsActivity::class.java)
+                        startActivity(intent_trennings)
+
+                        /*Toast.makeText(applicationContext, "Clicked Training", Toast.LENGTH_SHORT)
+                            .show()*/
                     }
 
                     R.id.nav_diet -> {
@@ -102,7 +97,20 @@ class HomePageActivity : AppCompatActivity() {
 
             }
 
+
     }
 
+    private fun generateItemList(): MutableList<Item> {
+        val itemList = mutableListOf<Item>()
+
+        itemList.add(Item("Trening"))
+        itemList.add(Item("Trener"))
+        itemList.add(Item("Plan dietetyczny"))
+        itemList.add(Item("Jadłospis"))
+
+        return itemList
+    }
+
+    data class Item(val buttonText: String)
 
 }

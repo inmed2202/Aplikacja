@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".DieticianActivity">
 
+    <ScrollView
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView9"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
     <TextView
         android:id="@+id/textView13"
         android:layout_width="250dp"
@@ -111,4 +124,5 @@
             android:tint="@color/app_theme_light"
             app:srcCompat="@drawable/baseline_add_a_photo_24" />
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,10 +21,10 @@ class CategoryActivity : AppCompatActivity() {
         binding = ActivityCategoryBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.passes.setOnClickListener {
+        /*binding.passes.setOnClickListener {
             val intent = Intent(this , PassesActivity::class.java)
             startActivity(intent)
-        }
+        }*/
 
         binding.categorybackBtn.setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)

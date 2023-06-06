@@ -1,8 +1,9 @@
-package com.example.myapplication
+package com.example.loginapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.loginapplication.R
 
 class CreatedEventActivity : AppCompatActivity() {
     lateinit var enteredName: TextView
