@@ -54,8 +54,8 @@ class HomePageActivity : AppCompatActivity() {
                     }
 
                     R.id.nav_diet -> {
-                        Toast.makeText(applicationContext, "Clicked Diet", Toast.LENGTH_SHORT)
-                            .show()
+                        val intent = Intent(this, DietPlanActivity::class.java)
+                        startActivity(intent)
                     }
 
                     R.id.nav_settings -> {

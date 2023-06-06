@@ -13,6 +13,12 @@
         android:theme="@style/Theme.LoginApplication"
         tools:targetApi="31">
         <activity
+            android:name=".TommorrowsDPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TodaysDPActivity"
+            android:exported="false" />
+        <activity
             android:name=".PlanInfoActivity"
             android:exported="false" />
         <activity
