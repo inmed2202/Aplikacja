@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ObwodowyOnlineActivity">
+    tools:context=".JogaOnlineActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar12"
+        android:id="@+id/toolbar17"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
@@ -18,52 +18,49 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton17"
+        android:id="@+id/imageButton22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#00FFFFFF"
         android:tint="@color/app_theme_light"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar12"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar17"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_search_24" />
 
     <TextView
-        android:id="@+id/trening_h9"
+        android:id="@+id/trening_h14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
-        android:text="Trening obwodowy"
+        android:text="Joga"
         android:textColor="@color/purple_500"
         android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar12" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar17" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/trening_h9">
+        app:layout_constraintTop_toBottomOf="@+id/trening_h14">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingBottom="150dp">
+            android:orientation="vertical">
 
             <WebView
-                android:id="@+id/obwodowy_online_film"
+                android:id="@+id/joga_online_film"
                 android:layout_width="391dp"
-                android:layout_height="350dp"
-                android:layout_marginTop="24dp">
-
-            </WebView>
+                android:layout_height="350dp" />
 
             <TextView
-                android:id="@+id/textView18"
-                android:layout_width="wrap_content"
+                android:id="@+id/textView115"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
@@ -73,7 +70,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView51"
+                android:id="@+id/textView116"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -81,7 +78,7 @@
                 android:text="Warunki domowe sprawiają, że musimy bazować na ćwiczeniach z wykorzystaniem ciężaru własnego ciała. Nie jest to złe rozwiązanie. W myśl zasady „twoje ciało jest twoim najlepszym sprzętem treningowym”, można wykonać bardzo skuteczne sesje treningowe. " />
 
             <TextView
-                android:id="@+id/textView45"
+                android:id="@+id/textView117"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -89,42 +86,42 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView47"
+                android:id="@+id/textView118"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
                 android:text="30 sekund skip A," />
 
             <TextView
-                android:id="@+id/textView49"
+                android:id="@+id/textView119"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
                 android:text="30 sekund bieg bokserski." />
 
             <TextView
-                android:id="@+id/textView48"
+                android:id="@+id/textView120"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
                 android:text="30 sekund skip C," />
 
             <TextView
-                android:id="@+id/textView46"
+                android:id="@+id/textView121"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
                 android:text="30 sekund pajacyki," />
 
             <TextView
-                android:id="@+id/textView52"
+                android:id="@+id/textView122"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:text="Trening: wykonujemy od 2 do 5 obwodów, w zależności od stopnia wytrenowania oraz ustalonej intensywności treningu. Przerwa pomiędzy poszczególnymi obwodami nie powinna być dłuższa niż 3 minuty." />
 
             <TextView
-                android:id="@+id/textView53"
+                android:id="@+id/textView123"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -132,14 +129,14 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView54"
+                android:id="@+id/textView124"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:text="Pierwszym ćwiczeniem, które warto wykonać są przysiady z wyskokiem – klasyczny przysiad zakończony wyskokiem podczas wyjścia w górę. Świetne ćwiczenie na mięśnie nóg, które pozwala budować ich siłę oraz dynamikę." />
 
             <TextView
-                android:id="@+id/textView55"
+                android:id="@+id/textView125"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -147,14 +144,14 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView56"
+                android:id="@+id/textView126"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:text="Kolejnym są tak zwane burpee, czyli padnij-powstań. Ćwiczenie, które większość osób nienawidzi, a zakochuje się kiedy widzi jego efekty. Rozpoczynamy w pozycji stojącej wykonując półprzysiad podparty, następnie wyrzucamy nogi w tył, wykonujemy pompkę, wstajemy i wyskakujemy w górę. Ćwiczenie jest tak efektywne, ponieważ angażuje praktycznie całe ciało i wymusza dużą podaż energetyczną." />
 
             <TextView
-                android:id="@+id/textView57"
+                android:id="@+id/textView127"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -162,7 +159,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView58"
+                android:id="@+id/textView128"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -170,5 +167,4 @@
 
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

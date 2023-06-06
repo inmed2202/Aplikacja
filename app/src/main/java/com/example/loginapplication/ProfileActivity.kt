@@ -24,76 +24,6 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //setContentView(R.layout.activity_profile)
-
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayout)
-        val navView: NavigationView = findViewById(R.id.nav_view)
-
-
-
-        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
-        drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
-
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-        navView.setNavigationItemSelectedListener {
-            when (it.itemId) {
-                R.id.nav_home -> {
-                    Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT)
-                        .show()
-                }
-
-                R.id.nav_training -> {
-                    val intent_trennings = Intent(this , TrenningsActivity::class.java)
-                    startActivity(intent_trennings)
-
-                    /*Toast.makeText(applicationContext, "Clicked Training", Toast.LENGTH_SHORT)
-                        .show()*/
-                }
-
-                R.id.nav_diet -> {
-                    Toast.makeText(applicationContext, "Clicked Diet", Toast.LENGTH_SHORT)
-                        .show()
-                }
-
-                R.id.nav_settings -> {
-                    Toast.makeText(applicationContext, "Clicked Settings", Toast.LENGTH_SHORT)
-                        .show()
-                }
-
-                R.id.nav_profile -> {
-                    val intent_profile = Intent(this , ProfileActivity::class.java)
-                    startActivity(intent_profile)
-
-                    /*val intent = Intent(this , ProfileActivity::class.java)
-                    startActivity(intent)*/
-                    /*Toast.makeText(applicationContext, "Clicked Profile", Toast.LENGTH_SHORT)
-                        .show()*/
-                }
-
-                R.id.nav_share -> {
-                    Toast.makeText(applicationContext, "Clicked Share", Toast.LENGTH_SHORT)
-                        .show()
-                }
-
-                R.id.nav_rate -> {
-                    Toast.makeText(applicationContext, "Clicked Rate", Toast.LENGTH_SHORT)
-                        .show()
-                }
-
-                R.id.nav_logout -> {
-                    Toast.makeText(applicationContext, "Clicked Logout", Toast.LENGTH_SHORT)
-                        .show()
-                }
-            }
-
-            true
-
-
-        }
 
 
         binding.categorymoreBtn.setOnClickListener {
@@ -121,29 +51,6 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.addphotoBtn.setOnClickListener {
-            dispatchTakePictureIntent()
-        }
-
 
     }
-
-    private fun dispatchTakePictureIntent() {
-        val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        if (takePictureIntent.resolveActivity(packageManager) != null) {
-            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
-        }
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-
-        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
-            val imageBitmap = data?.extras?.get("data") as Bitmap
-            binding.addphotoBtn.setImageBitmap(imageBitmap)
-        }
-    }
-
-
-
 }

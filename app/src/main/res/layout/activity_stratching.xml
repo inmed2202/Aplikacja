@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
-        android:text="Joga"
+        android:text="Stratching"
         android:textColor="@color/purple_500"
         android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,37 +42,37 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trening_h8">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imageView33"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginTop="140dp"
+                android:layout_marginTop="10dp"
                 app:srcCompat="@drawable/stratchingfull" />
 
-            <EditText
-                android:id="@+id/editTextTextMultiLine8"
+            <TextView
+                android:id="@+id/textView164"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:layout_marginTop="22dp"
-                android:ems="10"
-                android:gravity="end"
-                android:inputType="textMultiLine"
-                android:text="Stretching oznacza rozciąganie i jest rodzajem ćwiczeń, które łączą w sobie pewne elementy innych rodzajów aktywności – jogi, pilatesu. Ćwiczenia rozciągające dzielą się na stretching dynamiczny, statyczny oraz kilka dodatkowych technik rozciągania. Stretching dynamiczny zazwyczaj poprzedza trening, podczas gdy stretching statyczny go kończy. Inne stosowane techniki rozciągania to stretching izometryczny, który polega na rozciąganiu statycznym przy silnym napięciu mięśni, stretching balistyczny oraz rozciąganie wykorzystywane w rehabilitacji, czyli stretching PNF. Rozciąganie mięśni zalecane jest przed każdym treningiem jako rodzaj rozgrzewki, ponieważ pozwala przygotować mięśnie na wysiłek. Jednakże stretching może być sam w sobie treningiem, co oznacza, że także przed nim należy się rozgrzać (wystarczy kilka przysiadów lub krótki bieg). Stretching dynamiczny to ćwiczenia wykonywane w ruchu, zaś statyczny – kiedy ciało znajduje się w spoczynku. Jednym z rodzajów ćwiczeń stretchingu jest krążenie stawów. Co ważne, stretching nie jest wykonywany w celu uzyskania spadku wagi. Jego głównym celem jest poprawa ruchomości stawów, rozluźnienie mięśni, zlikwidowanie przykurczów. Ćwiczenia na rozciąganie polecane są osobom, które spędzają wiele godzin w jednej pozycji, narażone są na zwyrodnienia kręgosłupa, cierpią z powodu kłopotów ze sztywniejącym karkiem. Trening rozciągający jest przeznaczony także dla osób ćwiczących na siłowni – zalecane są ćwiczenia rozciągające po treningu, ale także przed aktywnością na siłowni. Efekty stretchingu to: zwiększenie ruchomości stawów, rozluźnienie mięśni, zwiększenie ich elastyczności, poprawienie krążenia, ujędrnienie ciała, zmniejszenie poziomu stresu.  "
-                android:textAlignment="center"
-                android:textSize="14sp"
-                android:textStyle="normal" />
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:text="Stretching oznacza rozciąganie i jest rodzajem ćwiczeń, które łączą w sobie pewne elementy innych rodzajów aktywności – jogi, pilatesu. Ćwiczenia rozciągające dzielą się na stretching dynamiczny, statyczny oraz kilka dodatkowych technik rozciągania. Stretching dynamiczny zazwyczaj poprzedza trening, podczas gdy stretching statyczny go kończy. Inne stosowane techniki rozciągania to stretching izometryczny, który polega na rozciąganiu statycznym przy silnym napięciu mięśni, stretching balistyczny oraz rozciąganie wykorzystywane w rehabilitacji, czyli stretching PNF. Rozciąganie mięśni zalecane jest przed każdym treningiem jako rodzaj rozgrzewki, ponieważ pozwala przygotować mięśnie na wysiłek. "
+                android:textAlignment="center" />
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/zapis_btn"
                 android:layout_width="230dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="80dp"

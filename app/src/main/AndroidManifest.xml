@@ -7,6 +7,7 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
     <application
         android:allowBackup="true"
@@ -18,6 +19,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginApplication"
         tools:targetApi="31">
+        <activity
+            android:name=".CrossfitOnlineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BoksOnlineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JogaOnlineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StratchingOnlineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FunkcjonalnyOnlineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SilowyOnlineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CardioOnlineActivity"
+            android:exported="false" />
         <activity
             android:name=".ObwodowyOnlineActivity"
             android:exported="false" />

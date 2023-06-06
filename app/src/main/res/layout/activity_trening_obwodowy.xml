@@ -57,22 +57,18 @@
                 android:layout_marginTop="140dp"
                 app:srcCompat="@drawable/obwodowyfull" />
 
-            <EditText
-                android:id="@+id/editTextTextMultiLine2"
-                android:layout_width="370dp"
+            <TextView
+                android:id="@+id/textView159"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:layout_marginTop="22dp"
-                android:ems="10"
-                android:gravity="end"
-                android:inputType="textMultiLine"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
                 android:text="Trening obwodowy to połączenie ćwiczeń o charakterze siłowym oraz cardio. Jak sama nazwa wskazuje, ćwiczenia wykonuje się w tzw. obwodach, innymi słowy – w seriach składających się z kilku ćwiczeń z określoną liczbą powtórzeń. Przykładowy trening obwodowy może obejmować 10 rodzajów ćwiczeń wykonywanych w seriach bezpośrednio po sobie. Czas na odpoczynek następuje dopiero po wykonaniu pełnego obwodu. Odróżnia to trening obwodowy od klasycznego treningu siłowego, w którym przerwy robi się częściej – po wykonaniu określonej liczby powtórzeń konkretnego ćwiczenia. Oznacza to, że cały trening zajmuje mniej czasu, jednak nie odbija się to na jego efektywności. Sposób, w jaki przebiega trening może niektórym osobom przypominać crossfit. Jednak ćwiczenia wykonywane w obwodach są nieco mniej intensywne i tego rodzaju trening skupia się na innych rodzajach ćwiczeń."
-                android:textAlignment="center"
-                android:textSize="14sp"
-                android:textStyle="normal" />
+                android:textAlignment="center" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/obwodowyzapisBtn"
                 android:layout_width="230dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="80dp"

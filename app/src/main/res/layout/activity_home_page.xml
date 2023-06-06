@@ -54,6 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
+            android:paddingBottom="4dp"
             android:text="Hi, Robin"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -63,10 +64,8 @@
         <ScrollView
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="170dp"
+            android:layout_height="wrap_content"
             android:paddingBottom="-1500dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView11">
@@ -100,7 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="130dp"
+                    android:layout_marginTop="150dp"
                     android:text="Najczęściej wybierane online:"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -226,7 +225,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="40dp"
+                    android:paddingBottom="-500dp"
                     android:text="Najczęściej wybierane offline:"
                     android:textSize="20sp"
                     android:textStyle="bold" />

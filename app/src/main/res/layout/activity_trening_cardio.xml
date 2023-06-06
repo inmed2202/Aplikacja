@@ -57,22 +57,18 @@
                 android:layout_marginTop="140dp"
                 app:srcCompat="@drawable/cardiofull" />
 
-            <EditText
-                android:id="@+id/editTextTextMultiLine3"
-                android:layout_width="370dp"
+            <TextView
+                android:id="@+id/textView157"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="22dp"
-                android:ems="10"
-                android:gravity="end"
-                android:inputType="textMultiLine"
+                android:layout_marginTop="24dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
                 android:text="Ćwiczenia cardio charakteryzuje stałe tempo oraz powtarzalność. Wśród przykładów można wyróżnić jazdę na rowerze, pływanie, wioślarstwo, narciarstwo biegowe, chód na bieżni, trening na orbitreku, bieganie czy marsz. Zadaniem wysiłku podejmowanego w ten sposób jest wytworzenie i doprowadzenie do wszystkich komórek naszego ciała dostatecznej ilości tlenu (do tego niezbędne jest  utrzymywanie tętna na tym samym wysokim poziomie). Trening cardio polecany jest szczególnie osobom, którym zależy na redukcji masy ciała. Jest bardzo dobrze tolerowany przez początkujących – ze względu na mniejsze obciążenia niż przy interwałach polecany jest osobom zaczynającym przygodę z treningami.  "
-                android:textAlignment="center"
-                android:textSize="14sp"
-                android:textStyle="normal" />
+                android:textAlignment="center" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/cardiozapisBtn"
                 android:layout_width="230dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="80dp"

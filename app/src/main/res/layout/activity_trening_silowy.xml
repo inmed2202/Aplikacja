@@ -57,22 +57,18 @@
                 android:layout_marginTop="140dp"
                 app:srcCompat="@drawable/silowy1full" />
 
-            <EditText
-                android:id="@+id/editTextTextMultiLine"
-                android:layout_width="370dp"
+            <TextView
+                android:id="@+id/textView160"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="12dp"
-                android:ems="10"
-                android:gravity="end"
-                android:inputType="textMultiLine"
+                android:layout_marginTop="22dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
                 android:text="Z założenia trening siłowy ma na celu stopniowe obciążanie Twojego układu mięśniowego i neurologicznego, aby osiągnąć wyznaczony cel. Najczęściej trening siłowy kojarzony jest jedynie z płcią męską i ogromnymi mięśniami. Owszem, nie ma innego rodzaju treningu, który zbuduje masę mięśniową. Niemniej jednak trening siłowy jest dobry na wszystko! Dzięki niemu schudniesz, wyrzeźbisz sylwetkę, zbudujesz wytrzymałość siłową, ale również możesz poprawić swoją ogólną sprawność fizyczną. Druga dobra wiadomość jest taka, że nie musisz biegać długich dystansów, pokonywać dziesiątek długości basenu, kręcić dziesiątek lub setek kilometrów na rowerze, żeby schudnąć. Szczególnie jesienią i zimą. Chyba, że lubisz. Możesz też przyjść na siłownię. "
-                android:textAlignment="center"
-                android:textSize="14sp"
-                android:textStyle="normal" />
+                android:textAlignment="center" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/silowyzapisBtn"
                 android:layout_width="230dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="80dp"
