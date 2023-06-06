@@ -3,16 +3,15 @@ package com.example.loginapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.loginapplication.databinding.ActivityCategoryBinding
-import com.example.loginapplication.databinding.ActivitySuccesBinding
+import com.example.loginapplication.databinding.ActivitySuccessBinding
 
-class SuccesActivity : AppCompatActivity() {
+class SuccessActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivitySuccesBinding
+    private lateinit var binding : ActivitySuccessBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySuccesBinding.inflate(layoutInflater)
+        binding = ActivitySuccessBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.succesbackBtn.setOnClickListener {

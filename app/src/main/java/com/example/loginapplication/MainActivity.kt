@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.loginapplication.R.id.googlebtn
@@ -35,6 +36,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         firebaseAuth = FirebaseAuth.getInstance()
+
+        //sing up action by clicking on sign up text
+        val signUpBtn = findViewById<TextView>(R.id.signup)
+
+        signUpBtn.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+        }
 
         binding.signinBtn.setOnClickListener {
             val email = binding.username.text.toString()
