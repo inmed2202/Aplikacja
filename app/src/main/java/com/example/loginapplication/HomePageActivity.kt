@@ -1,18 +1,15 @@
 package com.example.loginapplication
 
-import android.content.ClipData
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.os.Bundle
-import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.loginapplication.databinding.ActivityHomePageBinding
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class HomePageActivity : AppCompatActivity() {
@@ -49,13 +46,13 @@ class HomePageActivity : AppCompatActivity() {
                     }
 
                     R.id.nav_training -> {
-                        val intent_trennings = Intent(this , TrenningsActivity::class.java)
-                        startActivity(intent_trennings)
+                        val intent = Intent(this, TrainingsActivity::class.java)
+                        startActivity(intent)
                     }
 
                     R.id.nav_diet -> {
-                        Toast.makeText(applicationContext, "Clicked Diet", Toast.LENGTH_SHORT)
-                            .show()
+                        val intent = Intent(this, DietPlanActivity::class.java)
+                        startActivity(intent)
                     }
 
                     R.id.nav_settings -> {
@@ -64,8 +61,8 @@ class HomePageActivity : AppCompatActivity() {
                     }
 
                     R.id.nav_profile -> {
-                            val intent_profile = Intent(this , ProfileActivity::class.java)
-                            startActivity(intent_profile)
+                            val intent = Intent(this , ProfileActivity::class.java)
+                            startActivity(intent)
                     }
 
                     R.id.nav_share -> {

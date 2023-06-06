@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import com.example.loginapplication.CategoryActivity
+import com.example.loginapplication.CreatingTheEventActivity
 import com.example.loginapplication.R
 
 

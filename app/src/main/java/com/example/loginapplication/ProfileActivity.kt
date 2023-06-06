@@ -3,9 +3,13 @@ package com.example.loginapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
 import com.example.loginapplication.databinding.ActivityProfileBinding
 import com.example.myapplication.PassesActivity
+import com.google.android.material.navigation.NavigationView
 
 class ProfileActivity : AppCompatActivity() {
 
@@ -17,7 +21,7 @@ class ProfileActivity : AppCompatActivity() {
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        /*val toolbar1: Toolbar = findViewById(R.id.toolbar)
+        val toolbar1: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar1)
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayout)
@@ -38,8 +42,8 @@ class ProfileActivity : AppCompatActivity() {
                 }
 
                 R.id.nav_training -> {
-                    Toast.makeText(applicationContext, "Clicked Training", Toast.LENGTH_SHORT)
-                        .show()
+                  val intent = Intent(this, TrainingsActivity::class.java)
+                    startActivity(intent)
                 }
 
                 R.id.nav_diet -> {
@@ -76,7 +80,7 @@ class ProfileActivity : AppCompatActivity() {
             }
 
             true
-        }*/
+        }
 
         binding.categorymoreBtn.setOnClickListener {
             val intent = Intent(this , CategoryActivity::class.java)

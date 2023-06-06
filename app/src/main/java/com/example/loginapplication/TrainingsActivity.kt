@@ -6,7 +6,7 @@ import android.os.Bundle
 import com.example.loginapplication.databinding.ActivityCategoryBinding
 import com.example.loginapplication.databinding.ActivityTrenningsBinding
 
-class TrenningsActivity : AppCompatActivity() {
+class TrainingsActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityTrenningsBinding
 
