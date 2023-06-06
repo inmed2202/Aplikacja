@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TreningSilowyActivity">
+    tools:context=".TreningFunkcjonalnyActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar4"
+        android:id="@+id/toolbar7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
@@ -18,27 +18,27 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/imageButton12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#00FFFFFF"
         android:tint="@color/app_theme_light"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar4"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar7"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_search_24" />
 
     <TextView
-        android:id="@+id/trening_h"
+        android:id="@+id/trening_h4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
-        android:text="Trening siłowy"
+        android:text="Trening funkcjonalny"
         android:textColor="@color/purple_500"
         android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar7" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -50,29 +50,29 @@
             android:orientation="vertical" >
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imageView26"
                 android:layout_width="350dp"
                 android:layout_height="250dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="140dp"
-                app:srcCompat="@drawable/silowy1full" />
+                app:srcCompat="@drawable/obwodowyfull" />
 
             <EditText
-                android:id="@+id/editTextTextMultiLine"
+                android:id="@+id/editTextTextMultiLine4"
                 android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="22dp"
                 android:ems="10"
                 android:gravity="end"
                 android:inputType="textMultiLine"
-                android:text="Z założenia trening siłowy ma na celu stopniowe obciążanie Twojego układu mięśniowego i neurologicznego, aby osiągnąć wyznaczony cel. Najczęściej trening siłowy kojarzony jest jedynie z płcią męską i ogromnymi mięśniami. Owszem, nie ma innego rodzaju treningu, który zbuduje masę mięśniową. Niemniej jednak trening siłowy jest dobry na wszystko! Dzięki niemu schudniesz, wyrzeźbisz sylwetkę, zbudujesz wytrzymałość siłową, ale również możesz poprawić swoją ogólną sprawność fizyczną. Druga dobra wiadomość jest taka, że nie musisz biegać długich dystansów, pokonywać dziesiątek długości basenu, kręcić dziesiątek lub setek kilometrów na rowerze, żeby schudnąć. Szczególnie jesienią i zimą. Chyba, że lubisz. Możesz też przyjść na siłownię. "
+                android:text="Trening funkcjonalny to rodzaj intensywnych ćwiczeń, których celem jest wszechstronne wzmocnienie mięśni bez rozbudowywania masy mięśniowej. Polega na imitowaniu ruchów, które wykonujemy na co dzień przy zwykłych czynnościach, ale w szybszym tempie i z wieloma powtórzeniami. Sprawdź, jakie korzyści możesz odnieść uprawiając fitness funkcjonalny. Trening funkcjonalny, w odróżnieniu od tradycyjnych ćwiczeń na siłowni, skupia się na naśladowaniu ruchów wykonywanych przez nas w życiu codziennym. Dzięki temu poszczególne grupy mięśniowe współdziałają ze sobą, a my zwiększamy przy okazji naszą koordynację i gibkość. Trening funkcjonalny składa się z ćwiczeń podobnych do porannego wstawania z łóżka, sięgania po coś, np. wyciągania ręki po mikser stojący na najwyższej półce w kuchni, podnoszenia i unoszenia przedmiotów, wskakiwania na schody – czyli najczęściej wykonywanych przez nas ruchów w ciągu dnia. "
                 android:textAlignment="center"
                 android:textSize="14sp"
                 android:textStyle="normal" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/button8"
                 android:layout_width="230dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="80dp"

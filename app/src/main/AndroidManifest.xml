@@ -6,7 +6,7 @@
         android:name="android.hardware.camera"
         android:required="false" />
 
-    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -18,6 +18,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginApplication"
         tools:targetApi="31">
+        <activity
+            android:name=".ObwodowyOnlineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StratchingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JogaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CrossfitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BoksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TreningFunkcjonalnyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TreningObwodowyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TreningCardioActivity"
+            android:exported="false" />
         <activity
             android:name=".TreningSilowyActivity"
             android:exported="false" />
