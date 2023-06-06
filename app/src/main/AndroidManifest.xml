@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +19,37 @@
         android:theme="@style/Theme.LoginApplication"
         tools:targetApi="31">
         <activity
-            android:name=".PassInfoActivity"
+            android:name=".ObwodowyOnlineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StratchingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JogaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CrossfitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BoksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TreningFunkcjonalnyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TreningObwodowyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TreningCardioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TreningSilowyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrenningsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TreningActivity"
             android:exported="false" />
         <activity
             android:name=".YourDataActivity"
@@ -31,19 +67,20 @@
             android:name=".TrenerActivity"
             android:exported="false" />
         <activity
-            android:name=".SuccessActivity"
+            android:name=".SuccesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PassesActivity"
             android:exported="false" />
         <activity
             android:name=".CategoryActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.PassesActivity"
+            android:name=".ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
-            android:exported="false" /> <!-- <activity -->
-        <!-- android:name=".profile_activity" -->
-        <!-- android:exported="false" /> -->
+            android:name=".profile_activity"
+            android:exported="false" />
         <activity
             android:name=".nav_menu"
             android:exported="false"

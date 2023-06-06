@@ -570,6 +570,7 @@
                 android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/obwodowyOnline"
                 android:layout_width="380dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="5dp"

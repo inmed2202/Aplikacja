@@ -51,9 +51,6 @@ class HomePageActivity : AppCompatActivity() {
                     R.id.nav_training -> {
                         val intent_trennings = Intent(this , TrenningsActivity::class.java)
                         startActivity(intent_trennings)
-
-                        /*Toast.makeText(applicationContext, "Clicked Training", Toast.LENGTH_SHORT)
-                            .show()*/
                     }
 
                     R.id.nav_diet -> {
@@ -69,11 +66,6 @@ class HomePageActivity : AppCompatActivity() {
                     R.id.nav_profile -> {
                             val intent_profile = Intent(this , ProfileActivity::class.java)
                             startActivity(intent_profile)
-
-                        /*val intent = Intent(this , ProfileActivity::class.java)
-                        startActivity(intent)*/
-                        /*Toast.makeText(applicationContext, "Clicked Profile", Toast.LENGTH_SHORT)
-                            .show()*/
                     }
 
                     R.id.nav_share -> {
