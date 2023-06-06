@@ -1,15 +1,18 @@
 package com.example.loginapplication
 
+import android.content.ClipData
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.loginapplication.databinding.ActivityHomePageBinding
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class HomePageActivity : AppCompatActivity() {
@@ -46,13 +49,13 @@ class HomePageActivity : AppCompatActivity() {
                     }
 
                     R.id.nav_training -> {
-                        val intent = Intent(this, TrainingsActivity::class.java)
-                        startActivity(intent)
+                        val intent_trennings = Intent(this , TrainingsActivity::class.java)
+                        startActivity(intent_trennings)
                     }
 
                     R.id.nav_diet -> {
-                        val intent = Intent(this, DietPlanActivity::class.java)
-                        startActivity(intent)
+                        Toast.makeText(applicationContext, "Clicked Diet", Toast.LENGTH_SHORT)
+                            .show()
                     }
 
                     R.id.nav_settings -> {
@@ -61,8 +64,8 @@ class HomePageActivity : AppCompatActivity() {
                     }
 
                     R.id.nav_profile -> {
-                            val intent = Intent(this , ProfileActivity::class.java)
-                            startActivity(intent)
+                            val intent_profile = Intent(this , ProfileActivity::class.java)
+                            startActivity(intent_profile)
                     }
 
                     R.id.nav_share -> {
@@ -76,8 +79,8 @@ class HomePageActivity : AppCompatActivity() {
                     }
 
                     R.id.nav_logout -> {
-                        val intent_signin = Intent(this, MainActivity::class.java)
-                        startActivity(intent_signin)
+                        Toast.makeText(applicationContext, "Clicked Logout", Toast.LENGTH_SHORT)
+                            .show()
                     }
                 }
 
