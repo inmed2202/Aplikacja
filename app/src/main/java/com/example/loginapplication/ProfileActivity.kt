@@ -14,12 +14,8 @@ import com.google.android.material.navigation.NavigationView
 
 class ProfileActivity : AppCompatActivity() {
 
-    lateinit var toggle : ActionBarDrawerToggle
     private lateinit var binding : ActivityProfileBinding
 
-    companion object {
-        private const val REQUEST_IMAGE_CAPTURE = 1
-    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)

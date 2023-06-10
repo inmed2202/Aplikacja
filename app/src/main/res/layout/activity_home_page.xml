@@ -40,34 +40,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="40dp"
-            android:text="My Application"
+            android:layout_marginTop="32dp"
+            android:text="Fitness&amp;Training"
             android:textColor="@color/purple_500"
             android:textSize="32sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
-            android:paddingBottom="4dp"
-            android:text="Hi, Robin"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
         <ScrollView
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="-1500dp"
+            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView11">
+            app:layout_constraintTop_toBottomOf="@+id/textView9">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -79,7 +66,7 @@
                     android:layout_width="350dp"
                     android:layout_height="250dp"
                     android:layout_marginStart="24dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
                     app:srcCompat="@drawable/homepage1" />
 
                 <TextView
@@ -89,7 +76,7 @@
                     android:layout_marginStart="60dp"
                     android:layout_marginTop="-150dp"
                     android:text="Rekomendowane dla Ciebie"
-                    android:textColor="@color/purple_200"
+                    android:textColor="#A6A6A6"
                     android:textSize="22sp"
                     android:textStyle="bold" />
 
@@ -111,56 +98,67 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:paddingRight="-820dp">
+                        android:paddingRight="-790dp">
 
                         <ImageView
-                            android:id="@+id/imageView17"
+                            android:id="@+id/hpcrossfitBtnImg"
                             android:layout_width="match_parent"
                             android:layout_height="125dp"
+                            android:layout_marginLeft="6dp"
                             android:layout_marginTop="12dp"
+                            android:paddingLeft="-20dp"
+                            android:paddingRight="-20dp"
                             app:srcCompat="@drawable/homepage2" />
 
                         <ImageView
-                            android:id="@+id/imageView19"
+                            android:id="@+id/hpsilowyBtnImg"
                             android:layout_width="wrap_content"
                             android:layout_height="125dp"
-                            android:layout_marginLeft="-20dp"
+                            android:layout_marginLeft="10dp"
                             android:layout_marginTop="12dp"
                             android:layout_weight="1"
+                            android:paddingLeft="-20dp"
+                            android:paddingRight="-20dp"
                             app:srcCompat="@drawable/homepage3" />
 
                         <ImageView
-                            android:id="@+id/imageView20"
+                            android:id="@+id/hpboksBtnImg"
                             android:layout_width="wrap_content"
                             android:layout_height="125dp"
-                            android:layout_marginLeft="-20dp"
+                            android:layout_marginLeft="10dp"
                             android:layout_marginTop="12dp"
                             android:layout_weight="1"
+                            android:paddingLeft="-20dp"
+                            android:paddingRight="-20dp"
                             app:srcCompat="@drawable/homepage4" />
 
                         <ImageView
-                            android:id="@+id/imageView21"
+                            android:id="@+id/hpfunkcjonalnyBtnImg"
                             android:layout_width="wrap_content"
                             android:layout_height="125dp"
-                            android:layout_marginLeft="-20dp"
+                            android:layout_marginLeft="10dp"
                             android:layout_marginTop="12dp"
                             android:layout_weight="1"
+                            android:paddingLeft="-20dp"
+                            android:paddingRight="-20dp"
                             app:srcCompat="@drawable/homepage5" />
 
                         <ImageView
-                            android:id="@+id/imageView22"
+                            android:id="@+id/hprelaksacyjnyBtnImg"
                             android:layout_width="wrap_content"
                             android:layout_height="125dp"
-                            android:layout_marginLeft="-20dp"
+                            android:layout_marginLeft="10dp"
                             android:layout_marginTop="12dp"
                             android:layout_weight="1"
+                            android:paddingLeft="-20dp"
+                            android:paddingRight="0dp"
                             app:srcCompat="@drawable/homepage6" />
 
                         <TextView
-                            android:id="@+id/textView32"
+                            android:id="@+id/hpcrossfitBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="-945dp"
+                            android:layout_marginLeft="-900dp"
                             android:layout_marginTop="65dp"
                             android:layout_weight="1"
                             android:text="Crossfit"
@@ -169,10 +167,10 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/textView35"
+                            android:id="@+id/hpsilowyBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="150dp"
+                            android:layout_marginLeft="130dp"
                             android:layout_marginTop="65dp"
                             android:layout_weight="1"
                             android:text="Siłowy"
@@ -181,7 +179,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/textView36"
+                            android:id="@+id/hpboksBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="145dp"
@@ -193,10 +191,10 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/textView37"
+                            android:id="@+id/hpfunkcjonalnyBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="120dp"
+                            android:layout_marginLeft="110dp"
                             android:layout_marginTop="65dp"
                             android:layout_weight="1"
                             android:text="Funkcjonalny"
@@ -205,13 +203,13 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/textView38"
+                            android:id="@+id/hprelaksacyjnyBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="100dp"
+                            android:layout_marginLeft="80dp"
                             android:layout_marginTop="65dp"
                             android:layout_weight="1"
-                            android:text="Relaksacyjny"
+                            android:text="Stratching"
                             android:textColor="@color/app_theme_light"
                             android:textSize="18sp"
                             android:textStyle="bold" />
@@ -231,7 +229,7 @@
                     android:textStyle="bold" />
 
                 <ImageView
-                    android:id="@+id/imageView24"
+                    android:id="@+id/hpdlapanBtnImg"
                     android:layout_width="180dp"
                     android:layout_height="180dp"
                     android:layout_marginStart="11dp"
@@ -239,7 +237,7 @@
                     app:srcCompat="@drawable/homepage7" />
 
                 <ImageView
-                    android:id="@+id/imageView25"
+                    android:id="@+id/hpdlapanowBtnImg"
                     android:layout_width="180dp"
                     android:layout_height="180dp"
                     android:layout_marginLeft="202dp"
@@ -247,7 +245,7 @@
                     app:srcCompat="@drawable/homepage8" />
 
                 <ImageView
-                    android:id="@+id/imageView27"
+                    android:id="@+id/hpboks2BtnImg"
                     android:layout_width="180dp"
                     android:layout_height="180dp"
                     android:layout_marginLeft="11dp"
@@ -255,7 +253,7 @@
                     app:srcCompat="@drawable/homepage9" />
 
                 <ImageView
-                    android:id="@+id/imageView28"
+                    android:id="@+id/hpjogaBtnImg"
                     android:layout_width="180dp"
                     android:layout_height="180dp"
                     android:layout_marginLeft="202dp"
@@ -263,7 +261,7 @@
                     app:srcCompat="@drawable/homepage10" />
 
                 <ImageView
-                    android:id="@+id/imageView29"
+                    android:id="@+id/hpstratchingBtnImg"
                     android:layout_width="180dp"
                     android:layout_height="180dp"
                     android:layout_marginStart="11dp"
@@ -271,7 +269,7 @@
                     app:srcCompat="@drawable/homepage11" />
 
                 <TextView
-                    android:id="@+id/textView40"
+                    android:id="@+id/hpdlapanBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="70dp"
@@ -282,7 +280,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView41"
+                    android:id="@+id/hpdlapanowBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="250dp"
@@ -293,7 +291,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView42"
+                    android:id="@+id/hpboks2Btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="75dp"
@@ -304,7 +302,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView43"
+                    android:id="@+id/hpjogaBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="270dp"
@@ -315,7 +313,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView44"
+                    android:id="@+id/hpstratchingBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"

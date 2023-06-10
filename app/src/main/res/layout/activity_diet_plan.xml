@@ -37,7 +37,7 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/imageView17"
+        android:id="@+id/hpcrossfitBtnImg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/toolbar5"
@@ -50,7 +50,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView17">
+        app:layout_constraintTop_toBottomOf="@+id/hpcrossfitBtnImg">
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -25,6 +25,8 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
+    <string name="welcome_message">Witaj, %1$s!</string>
+
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>

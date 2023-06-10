@@ -28,6 +28,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var googleSignInClient: GoogleSignInClient
+    companion object {
+        private const val RC_SIGN_IN = 9001
+    }
 
     //@SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -83,7 +86,6 @@ class MainActivity : AppCompatActivity() {
             signInGoogle()
         }
 
-
         //Initialize the UI
        // initUI()
     }
@@ -99,6 +101,16 @@ class MainActivity : AppCompatActivity() {
                     val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
                     handleResults(task)
                 }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == RC_SIGN_IN) {
+            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+            handleResults(task)
+        }
+        val intent = Intent(this, HomePageActivity::class.java)
+        startActivity(intent)
     }
 
     private fun handleResults(task: Task<GoogleSignInAccount>) {
@@ -127,6 +139,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
 
     /*private fun initUI() {
          binding.backBtn.setOnClickListener{
