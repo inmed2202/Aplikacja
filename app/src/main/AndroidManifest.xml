@@ -20,6 +20,10 @@
         android:theme="@style/Theme.LoginApplication"
         tools:targetApi="31">
         <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings" />
+        <activity
             android:name=".CrossfitOnlineActivity"
             android:exported="false" />
         <activity
@@ -68,10 +72,7 @@
             android:name=".TreningSilowyActivity"
             android:exported="false" />
         <activity
-            android:name=".TrenningsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TreningActivity"
+            android:name=".TrainingsActivity"
             android:exported="false" />
         <activity
             android:name=".YourDataActivity"

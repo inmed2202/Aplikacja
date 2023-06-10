@@ -44,17 +44,12 @@ class HomePageActivity : AppCompatActivity() {
                     }
 
                     R.id.nav_training -> {
-                        val intent_trennings = Intent(this , TrenningsActivity::class.java)
+                        val intent_trennings = Intent(this , TrainingsActivity::class.java)
                         startActivity(intent_trennings)
                     }
 
                     R.id.nav_diet -> {
                         Toast.makeText(applicationContext, "Clicked Diet", Toast.LENGTH_SHORT)
-                            .show()
-                    }
-
-                    R.id.nav_settings -> {
-                        Toast.makeText(applicationContext, "Clicked Settings", Toast.LENGTH_SHORT)
                             .show()
                     }
 
@@ -73,10 +68,17 @@ class HomePageActivity : AppCompatActivity() {
                             .show()
                     }
 
+                    R.id.nav_settings -> {
+                        val intent_settings = Intent(this, SettingsActivity::class.java)
+                        startActivity(intent_settings)
+                    }
+
                     R.id.nav_logout -> {
                         Toast.makeText(applicationContext, "Clicked Logout", Toast.LENGTH_SHORT)
                             .show()
                     }
+
+
                 }
 
                 true

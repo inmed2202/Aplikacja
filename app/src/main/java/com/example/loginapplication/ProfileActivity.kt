@@ -41,8 +41,8 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(intent)
         }*/
 
-        binding.yourSucces.setOnClickListener {
-            val intent = Intent(this, SuccesActivity::class.java)
+        binding.yourSuccess.setOnClickListener {
+            val intent = Intent(this, SuccessActivity::class.java)
             startActivity(intent)
         }
 
