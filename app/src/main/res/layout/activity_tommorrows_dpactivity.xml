@@ -6,4 +6,190 @@
     android:layout_height="match_parent"
     tools:context=".TommorrowsDPActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="match_parent"
+        android:layout_height="273dp"
+        android:backgroundTint="#87673AB7"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar5">
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="95dp"
+            android:text="Jutrzejszy plan"
+            android:textColor="@color/app_theme_light"
+            android:textSize="42sp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar5"
+        app:srcCompat="@drawable/tomplan" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/tomBkft"
+                android:layout_width="195dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/purple_200"
+                android:paddingBottom="60dp">
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="194dp"
+                    android:layout_height="106dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/tombft" />
+
+                <TextView
+                    android:id="@+id/textView165"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="120dp"
+                    android:text="Śniadanie"
+                    android:textColor="@color/purple_700"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView166"
+                    android:layout_width="150dp"
+                    android:layout_height="41dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="150dp"
+                    android:text="Pankejki     proteinowe"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView167"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="65dp"
+                    android:layout_marginTop="210dp"
+                    android:text="411 kcal" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/tomLunch"
+                android:layout_width="195dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/purple_200"
+                android:paddingBottom="60dp">
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="194dp"
+                    android:layout_height="106dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/tomlunch" />
+
+                <TextView
+                    android:id="@+id/textView168"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="65dp"
+                    android:layout_marginTop="120dp"
+                    android:text="Obiad"
+                    android:textColor="@color/purple_700"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView169"
+                    android:layout_width="150dp"
+                    android:layout_height="38dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="150dp"
+                    android:text="Ryba z                 sałatką"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView107"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="65dp"
+                    android:layout_marginTop="210dp"
+                    android:text="523 kcal" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/tomDinner"
+                android:layout_width="195dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/purple_200"
+                android:paddingBottom="60dp">
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="194dp"
+                    android:layout_height="106dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/tomdinner" />
+
+                <TextView
+                    android:id="@+id/textView117"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="65dp"
+                    android:layout_marginTop="120dp"
+                    android:text="Kolacja"
+                    android:textColor="@color/purple_700"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView171"
+                    android:layout_width="150dp"
+                    android:layout_height="38dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="150dp"
+                    android:text="Kotlet z                    sałatką"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView127"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="65dp"
+                    android:layout_marginTop="210dp"
+                    android:text="550 kcal" />
+            </FrameLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,7 +3,194 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".TodaysDPActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="match_parent"
+        android:layout_height="273dp"
+        android:backgroundTint="#87673AB7"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar5">
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="95dp"
+            android:text="Dzisiejszy plan"
+            android:textColor="@color/app_theme_light"
+            android:textSize="42sp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar5"
+        app:srcCompat="@drawable/todaysmealplan" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/todaysBkft"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/purple_200"
+                android:paddingBottom="60dp">
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="194dp"
+                    android:layout_height="106dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/breakfast" />
+
+                <TextView
+                    android:id="@+id/textView165"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="120dp"
+                    android:text="Śniadanie"
+                    android:textColor="@color/purple_700"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView166"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="150dp"
+                    android:text=" Kanapka z awokado i jajem"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView167"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="65dp"
+                    android:layout_marginTop="210dp"
+                    android:text="303 kcal" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/todaysLunch"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/purple_200"
+                android:paddingBottom="60dp">
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="194dp"
+                    android:layout_height="106dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/lunchyuuuuum" />
+
+                <TextView
+                    android:id="@+id/textView168"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="65dp"
+                    android:layout_marginTop="120dp"
+                    android:text="Obiad"
+                    android:textColor="@color/purple_700"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView169"
+                    android:layout_width="150dp"
+                    android:layout_height="38dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="150dp"
+                    android:text="Mięso z    warzywami"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView107"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="65dp"
+                    android:layout_marginTop="210dp"
+                    android:text="658 kcal" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/todaysDinner"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/purple_200"
+                android:paddingBottom="60dp">
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="194dp"
+                    android:layout_height="106dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/dinnah" />
+
+                <TextView
+                    android:id="@+id/textView117"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="65dp"
+                    android:layout_marginTop="120dp"
+                    android:text="Kolacja"
+                    android:textColor="@color/purple_700"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView171"
+                    android:layout_width="150dp"
+                    android:layout_height="38dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="150dp"
+                    android:text="Sałatka"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView127"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="65dp"
+                    android:layout_marginTop="210dp"
+                    android:text="450 kcal" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

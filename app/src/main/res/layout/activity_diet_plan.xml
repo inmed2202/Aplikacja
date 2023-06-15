@@ -28,7 +28,7 @@
             android:id="@+id/textView38"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
+            android:layout_marginStart="110dp"
             android:layout_marginTop="80dp"
             android:text="Twój Plan"
             android:textColor="@color/app_theme_light"
@@ -61,8 +61,7 @@
                 android:id="@+id/cardView6"
                 android:layout_width="350dp"
                 android:layout_height="300dp"
-                android:layout_marginHorizontal="30dp"
-                app:cardBackgroundColor="#81673AB7"
+                android:layout_marginHorizontal="20dp"
                 app:cardCornerRadius="30dp">
 
                 <TextView
@@ -154,7 +153,7 @@
                 android:id="@+id/tableLayout"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginStart="1dp"
+                android:layout_marginStart="-10dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginEnd="1dp">
 
@@ -173,6 +172,7 @@
                         android:id="@+id/dietTom"
                         android:layout_width="200dp"
                         android:layout_height="150dp"
+                        android:layout_marginStart="-10dp"
                         android:paddingStart="0dp"
                         app:srcCompat="@drawable/my_project" />
 
@@ -184,7 +184,7 @@
                 android:id="@+id/todaysPlan"
                 android:layout_width="178dp"
                 android:layout_height="150dp"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="-200dp"
                 android:backgroundTint="#9F673AB7">
 
@@ -202,10 +202,10 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/tommorrowsPlan1"
+                android:id="@+id/tommorrowsPlan"
                 android:layout_width="175dp"
                 android:layout_height="150dp"
-                android:layout_marginStart="222dp"
+                android:layout_marginStart="202dp"
                 android:layout_marginTop="-150dp"
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="-170dp"
@@ -222,77 +222,81 @@
                     android:textSize="26sp" />
             </androidx.cardview.widget.CardView>
 
-            <TableLayout
-                android:id="@+id/tableLayout1"
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginStart="1dp"
-                android:layout_marginTop="200dp"
-                android:layout_marginEnd="1dp">
+                android:layout_height="350dp" />
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+<!--            <TableLayout-->
+<!--                android:id="@+id/tableLayout1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_marginStart="1dp"-->
+<!--                android:layout_marginTop="200dp"-->
+<!--                android:layout_marginEnd="1dp">-->
 
-                    <ImageView
-                        android:id="@+id/dietToday1"
-                        android:layout_width="200dp"
-                        android:layout_height="150dp"
-                        android:layout_marginStart="10dp"
-                        app:srcCompat="@drawable/my_project_1_" />
+<!--                <TableRow-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
 
-                    <ImageView
-                        android:id="@+id/dietTom1"
-                        android:layout_width="200dp"
-                        android:layout_height="150dp"
-                        android:paddingStart="0dp"
-                        app:srcCompat="@drawable/my_project" />
+<!--                    <ImageView-->
+<!--                        android:id="@+id/dietToday1"-->
+<!--                        android:layout_width="200dp"-->
+<!--                        android:layout_height="150dp"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        app:srcCompat="@drawable/my_project_1_" />-->
 
-                </TableRow>
+<!--                    <ImageView-->
+<!--                        android:id="@+id/dietTom1"-->
+<!--                        android:layout_width="200dp"-->
+<!--                        android:layout_height="150dp"-->
+<!--                        android:paddingStart="0dp"-->
+<!--                        app:srcCompat="@drawable/my_project" />-->
 
-            </TableLayout>
+<!--                </TableRow>-->
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/todaysPlan1"
-                android:layout_width="178dp"
-                android:layout_height="150dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="-200dp"
-                android:backgroundTint="#9F673AB7">
+<!--            </TableLayout>-->
 
-                <TextView
-                    android:id="@+id/textView411"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="50dp"
-                    android:layout_marginTop="65dp"
-                    android:text="Dzisiaj"
-                    android:textColor="#FBF8F8"
-                    android:textSize="26sp"
-                    android:textStyle="normal" />
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/todaysPlan1"-->
+<!--                android:layout_width="178dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="-200dp"-->
+<!--                android:backgroundTint="#9F673AB7">-->
 
-            </androidx.cardview.widget.CardView>
+<!--                <TextView-->
+<!--                    android:id="@+id/textView411"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginHorizontal="50dp"-->
+<!--                    android:layout_marginTop="65dp"-->
+<!--                    android:text="Dzisiaj"-->
+<!--                    android:textColor="#FBF8F8"-->
+<!--                    android:textSize="26sp"-->
+<!--                    android:textStyle="normal" />-->
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/tommorrowsPlan"
-                android:layout_width="175dp"
-                android:layout_height="150dp"
-                android:layout_marginStart="222dp"
-                android:layout_marginTop="-150dp"
-                android:layout_marginEnd="1dp"
-                android:layout_marginBottom="-170dp"
-                android:backgroundTint="#98673AB7">
+<!--            </androidx.cardview.widget.CardView>-->
 
-                <TextView
-                    android:id="@+id/textView42"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="55dp"
-                    android:layout_marginTop="65dp"
-                    android:text="Jutro"
-                    android:textColor="#F9F7F7"
-                    android:textSize="26sp" />
-            </androidx.cardview.widget.CardView>
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/tommorrowsPlan"-->
+<!--                android:layout_width="175dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginStart="222dp"-->
+<!--                android:layout_marginTop="-150dp"-->
+<!--                android:layout_marginEnd="1dp"-->
+<!--                android:layout_marginBottom="-170dp"-->
+<!--                android:backgroundTint="#98673AB7">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView42"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="55dp"-->
+<!--                    android:layout_marginTop="65dp"-->
+<!--                    android:text="Jutro"-->
+<!--                    android:textColor="#F9F7F7"-->
+<!--                    android:textSize="26sp" />-->
+<!--            </androidx.cardview.widget.CardView>-->
         </LinearLayout>
     </ScrollView>
 

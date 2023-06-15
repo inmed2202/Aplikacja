@@ -19,6 +19,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginApplication"
         tools:targetApi="31">
+        <activity android:name=".TodaysDPActivity"
+            android:exported="false"/>
+        <activity android:name=".TommorrowsDPActivity"
+            android:exported="false"/>
+        <activity android:name=".DietPlanActivity"
+            android:exported="false"/>
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
@@ -90,10 +96,10 @@
             android:name=".TrenerActivity"
             android:exported="false" />
         <activity
-            android:name=".SuccesActivity"
+            android:name=".SuccessActivity"
             android:exported="false" />
         <activity
-            android:name=".PassesActivity"
+            android:name="com.example.myapplication.PassesActivity"
             android:exported="false" />
         <activity
             android:name=".CategoryActivity"
@@ -101,9 +107,9 @@
         <activity
             android:name=".ProfileActivity"
             android:exported="false" />
-        <activity
-            android:name=".profile_activity"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".profile_activity"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".nav_menu"
             android:exported="false"
