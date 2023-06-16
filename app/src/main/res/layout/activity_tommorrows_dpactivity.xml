@@ -6,4 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".TommorrowsDPActivity">
 
+    <ImageView
+        android:id="@+id/dietTom2"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:paddingStart="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/my_project" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tommorrowsPlan"
+        android:layout_width="175dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#98673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView422"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="65dp"
+            android:text="Jutro"
+            android:textColor="#F9F7F7"
+            android:textSize="26sp" />
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

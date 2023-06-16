@@ -1,11 +1,12 @@
 package com.example.loginapplication
 
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.loginapplication.databinding.ActivityHomePageBinding
@@ -39,8 +40,8 @@ class HomePageActivity : AppCompatActivity() {
         navView.setNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.nav_home -> {
-                    Toast.makeText(applicationContext, "Clicked Home", Toast.LENGTH_SHORT)
-                        .show()
+                    val intent_home = Intent(this, HomePageActivity::class.java)
+                    startActivity(intent_home)
                 }
 
                 R.id.nav_training -> {
@@ -49,8 +50,8 @@ class HomePageActivity : AppCompatActivity() {
                 }
 
                 R.id.nav_diet -> {
-                    Toast.makeText(applicationContext, "Clicked Diet", Toast.LENGTH_SHORT)
-                        .show()
+                    val intent_diet = Intent(this, DietPlanActivity::class.java)
+                    startActivity(intent_diet)
                 }
 
                 R.id.nav_profile -> {
@@ -59,13 +60,11 @@ class HomePageActivity : AppCompatActivity() {
                 }
 
                 R.id.nav_share -> {
-                    Toast.makeText(applicationContext, "Clicked Share", Toast.LENGTH_SHORT)
-                        .show()
+                    shareApp()
                 }
 
                 R.id.nav_rate -> {
-                    Toast.makeText(applicationContext, "Clicked Rate", Toast.LENGTH_SHORT)
-                        .show()
+                    rateUs()
                 }
 
                 R.id.nav_settings -> {
@@ -137,5 +136,31 @@ class HomePageActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+    }
+
+    private fun shareApp() {
+        val appUrl = "https://www.example.com/link_do_pobrania_aplikacji"
+
+        val shareIntent = Intent(Intent.ACTION_SEND)
+        shareIntent.type = "text/plain"
+        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Pobierz moją aplikację")
+        shareIntent.putExtra(Intent.EXTRA_TEXT, appUrl)
+
+        val packageManager = packageManager
+        if (shareIntent.resolveActivity(packageManager) != null) {
+            startActivity(Intent.createChooser(shareIntent, "Udostępnij link za pomocą"))
+        }
+    }
+
+    private fun rateUs() {
+        val packageName = packageName
+        val marketIntent = Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$packageName"))
+        val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=$packageName"))
+
+        try {
+            startActivity(marketIntent)
+        } catch (e: ActivityNotFoundException) {
+            startActivity(webIntent)
+        }
     }
 }

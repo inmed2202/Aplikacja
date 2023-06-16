@@ -6,4 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".TodaysDPActivity">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/todaysPlan"
+        android:layout_width="178dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#9F673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="65dp"
+            android:text="Dzisiaj"
+            android:textColor="#FBF8F8"
+            android:textSize="26sp"
+            android:textStyle="normal" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/dietToday2"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/my_project_1_" />
 </androidx.constraintlayout.widget.ConstraintLayout>

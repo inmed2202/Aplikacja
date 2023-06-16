@@ -47,15 +47,17 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="290dp"
+        android:paddingBottom="-300dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hpcrossfitBtnImg">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar5">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="-150dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView6"
@@ -293,6 +295,7 @@
                     android:textColor="#F9F7F7"
                     android:textSize="26sp" />
             </androidx.cardview.widget.CardView>
+
         </LinearLayout>
     </ScrollView>
 

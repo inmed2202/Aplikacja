@@ -113,6 +113,12 @@
             android:name=".ui.nav_menu"
             android:exported="false" />
         <activity
+            android:name=".DietPlanActivity" />
+        <activity
+            android:name=".TodaysDPActivity" />
+        <activity
+            android:name=".TommorrowsDPActivity" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
