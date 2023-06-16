@@ -195,7 +195,7 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="start|top"
-        android:text="Fitness to ogólny stan zdrowia i kondycji fizycznej, który jest osiągany poprzez regularną aktywność fizyczną, dobrze zbilansowaną dietę i dbanie o swoje ciało. Obejmuje on zarówno aspekt fizyczny, jak i mentalny, wpływając korzystnie na ogólną jakość życia."
+        android:text="Fitness to ogólny stan zdrowia i kondycji fizycznej, który jest osiągany poprzez regularną aktywność fizyczną, dobrze zbilansowaną dietę i dbanie o swoje ciało. Obejmuje on zarówno aspekt fizyczny, jak i mentalny, wpływając korzystnie na ogólną jakość życia.."
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
