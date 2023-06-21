@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrenerTreningiActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView173"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Dla trenera"
+        android:textColor="@color/purple_200"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar22" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="400dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="140dp"
+                android:backgroundTint="#AAA6AA"
+                android:hapticFeedbackEnabled="false"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/imageView29"
+                    android:layout_width="124dp"
+                    android:layout_height="84dp"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="50dp"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@drawable/funkcjonalnyicon" />
+
+                <TextView
+                    android:id="@+id/textView177"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="205dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Funkcjonalny"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="124dp"
+                    android:layout_height="84dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="50dp"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@drawable/cardioicon" />
+
+                <TextView
+                    android:id="@+id/textView176"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Cardio"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Treningi"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView36"
+                    android:layout_width="124dp"
+                    android:layout_height="84dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="164dp"
+                    app:srcCompat="@drawable/obwodowyicon" />
+
+                <TextView
+                    android:id="@+id/textView180"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="195dp"
+                    android:text="Obwodowy"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView37"
+                    android:layout_width="124dp"
+                    android:layout_height="84dp"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="164dp"
+                    app:srcCompat="@drawable/silowy1icon" />
+
+                <TextView
+                    android:id="@+id/textView183"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="195dp"
+                    android:text="Siłowy"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView38"
+                    android:layout_width="124dp"
+                    android:layout_height="84dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="280dp"
+                    app:srcCompat="@drawable/boksicon" />
+
+                <TextView
+                    android:id="@+id/textView184"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="75dp"
+                    android:layout_marginTop="310dp"
+                    android:text="Boks"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView39"
+                    android:layout_width="124dp"
+                    android:layout_height="84dp"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="280dp"
+                    app:srcCompat="@drawable/stratchingicon" />
+
+                <TextView
+                    android:id="@+id/textView185"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginTop="310dp"
+                    android:text="Stratching"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,16 +1,13 @@
 package com.example.loginapplication
 
-import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
-import com.example.loginapplication.R.id.googlebtn
 import com.example.loginapplication.databinding.ActivityMainBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
@@ -19,8 +16,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
-import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
 
 
 class MainActivity : AppCompatActivity() {
@@ -32,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         private const val RC_SIGN_IN = 9001
     }
 
-    //@SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -48,9 +42,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.trener.setOnClickListener {
+            val intent = Intent(this, TrenerLoginActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.signinBtn.setOnClickListener {
             val email = binding.username.text.toString()
             val password = binding.password.text.toString()
+
 
             if (email.isNotEmpty() && password.isNotEmpty()){
 
@@ -68,11 +68,15 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this , "Empty fields are not allowed!", Toast.LENGTH_SHORT).show()
 
             }
+
+
+
         }
 
         binding.signup.setOnClickListener {
             val intent = Intent(this , SignUpActivity::class.java)
             startActivity(intent)
+
         }
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)

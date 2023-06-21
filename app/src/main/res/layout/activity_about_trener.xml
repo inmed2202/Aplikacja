@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutTrenerActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView178"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Dla trenerów"
+        android:textColor="@color/purple_200"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar24" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView178">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="325dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#AAA6AA"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/imageView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="45dp"
+                    app:srcCompat="@drawable/trenerprofile" />
+
+                <TextView
+                    android:id="@+id/textView179"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="5dp"
+                    android:text="About Me"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView181"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="155dp"
+                    android:layout_marginTop="44dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:justificationMode="inter_word"
+                    android:text="Jestem doświadczonym trenerem personalnym, specjalizującym się w pomaganiu klientom osiągnąć swoje cele związane z kondycją fizyczną i zdrowiem. Posiadam bogate doświadczenie w pracy z"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView182"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="131dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:justificationMode="inter_word"
+                    android:text="różnymi grupami wiekowymi i poziomami fitnessu. Moja pasja do fitnessu i zdrowego stylu życia motywuje mnie do ciągłego doskonalenia swojej wiedzy i umiejętności. Kładę duży nacisk na indywidualne podejście do każdego klienta, uwzględniając ich cele, preferencje i ograniczenia. Moje treningi są zróżnicowane i oparte na naukowych podstawach, aby zapewnić efektywność i bezpieczeństwo. Cieszę się, gdy widzę moich klientów osiągających postępy i zyskujących większą pewność siebie i zdrowie. Mój główny cel jako trener personalny to pomóc ludziom odnaleźć radość i satysfakcję w regularnej aktywności fizycznej, która wpływa pozytywnie na ich całe życie."
+                    android:textSize="12sp" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

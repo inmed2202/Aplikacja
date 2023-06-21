@@ -10,6 +10,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.loginapplication.databinding.ActivityProfileBinding
+import com.example.myapplication.PassesActivity
 import com.google.android.material.navigation.NavigationView
 
 class ProfileActivity : AppCompatActivity() {
@@ -32,10 +33,10 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        /*binding.yourPases.setOnClickListener {
+        binding.yourPasses.setOnClickListener {
             val intent = Intent(this, PassesActivity::class.java)
             startActivity(intent)
-        }*/
+        }
 
         binding.yourSuccess.setOnClickListener {
             val intent = Intent(this, SuccessActivity::class.java)

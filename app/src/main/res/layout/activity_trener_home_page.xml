@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrenerHomePageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Dla trenerów"
+        android:textColor="@color/purple_200"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar21" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#AAA6AA"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="45dp"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@drawable/trenerprofile" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="5dp"
+                    android:text="About Me"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView25"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="310dp"
+                    android:layout_marginTop="125dp"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/baseline_arrow_circle_down_24" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="265dp"
+                    android:layout_marginTop="124dp"
+                    android:text="Więcej"
+                    android:textColor="@color/white"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView170"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="155dp"
+                    android:layout_marginTop="44dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:justificationMode="inter_word"
+                    android:text="Jestem doświadczonym trenerem personalnym, specjalizującym się w pomaganiu klientom osiągnąć swoje cele związane z kondycją fizyczną i zdrowiem. "
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#AAA6AA"
+                android:hapticFeedbackEnabled="false"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/imageView27"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="310dp"
+                    android:layout_marginTop="125dp"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/baseline_arrow_circle_down_24" />
+
+                <TextView
+                    android:id="@+id/textView172"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="265dp"
+                    android:layout_marginTop="124dp"
+                    android:text="Więcej"
+                    android:textColor="@color/white"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Treningi"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView34"
+                    android:layout_width="124dp"
+                    android:layout_height="84dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="40dp"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@drawable/cardioicon" />
+
+                <ImageView
+                    android:id="@+id/imageView35"
+                    android:layout_width="124dp"
+                    android:layout_height="84dp"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="40dp"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@drawable/funkcjonalnyicon" />
+
+                <TextView
+                    android:id="@+id/textView174"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Cardio"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView175"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="205dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Funkcjonalny"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#AAA6AA"
+                android:hapticFeedbackEnabled="false"
+                app:cardCornerRadius="30dp">
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Lista"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="#00FFFFFF" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

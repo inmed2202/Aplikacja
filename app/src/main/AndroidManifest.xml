@@ -2,10 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
@@ -19,12 +15,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginApplication"
         tools:targetApi="31">
-        <activity android:name=".TodaysDPActivity"
-            android:exported="false"/>
-        <activity android:name=".TommorrowsDPActivity"
-            android:exported="false"/>
-        <activity android:name=".DietPlanActivity"
-            android:exported="false"/>
+        <activity
+            android:name=".TrenerListaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrenerTreningiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutTrenerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrenerHomePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomePageTrener"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpTrenerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrenerLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TodaysDPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TommorrowsDPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DietPlanActivity"
+            android:exported="false" />
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
@@ -106,24 +126,19 @@
             android:exported="false" />
         <activity
             android:name=".ProfileActivity"
-            android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".profile_activity"-->
-<!--            android:exported="false" />-->
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".profile_activity" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".nav_menu"
             android:exported="false"
             android:label="@string/title_activity_nav_menu"
             android:theme="@style/Theme.LoginApplication.NoActionBar" />
         <activity
-            android:name=".ui.nav_menu"
-            android:exported="false" />
-        <activity
-            android:name=".DietPlanActivity" />
-        <activity
-            android:name=".TodaysDPActivity" />
-        <activity
-            android:name=".TommorrowsDPActivity" />
+            android:name=".nav_menu_trener"
+            android:exported="false"
+            android:label="@string/title_activity_nav_menu"
+            android:theme="@style/Theme.LoginApplication.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

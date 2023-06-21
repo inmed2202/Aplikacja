@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_200"
-    tools:context=".SignUpActivity">
+    tools:context=".SignUpTrenerActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -15,7 +15,7 @@
         app:layout_constraintGuide_percent="0.25" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/back_btn"
+        android:id="@+id/back_btn_sutrener"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -28,7 +28,7 @@
         app:tint="@color/purple_200" />
 
     <TextView
-        android:id="@+id/head_part1"
+        android:id="@+id/head_part1_sutrener"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -55,10 +55,10 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/name_box"
+                android:id="@+id/name_box_sutrener"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/edit_text_background"
                 android:drawableLeft="@drawable/baseline_supervised_user_circle_24"
                 android:drawablePadding="5dp"
@@ -69,10 +69,10 @@
                 android:padding="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/trener_trener" />
+                app:layout_constraintTop_toBottomOf="@+id/trener_sutrener" />
 
             <EditText
-                android:id="@+id/email_box"
+                android:id="@+id/email_box_sutrener"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_marginTop="16dp"
@@ -86,10 +86,27 @@
                 android:padding="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/name_box" />
+                app:layout_constraintTop_toBottomOf="@+id/name_box_sutrener" />
 
             <EditText
-                android:id="@+id/password_box"
+                android:id="@+id/email_box2_sutrener"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/baseline_check_circle_outline_24"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/purple_500"
+                android:ems="10"
+                android:hint="Identyfikator"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_box_sutrener" />
+
+            <EditText
+                android:id="@+id/password_box_sutrener"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_marginTop="16dp"
@@ -103,21 +120,21 @@
                 android:padding="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/email_box" />
+                app:layout_constraintTop_toBottomOf="@+id/email_box2_sutrener" />
 
             <TextView
-                android:id="@+id/extra_box"
+                android:id="@+id/extra_box_sutrener"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:text="min 8 znaków"
                 android:textColor="@android:color/darker_gray"
                 android:textSize="12dp"
-                app:layout_constraintEnd_toEndOf="@+id/password_box"
-                app:layout_constraintTop_toBottomOf="@+id/password_box" />
+                app:layout_constraintEnd_toEndOf="@+id/password_box_sutrener"
+                app:layout_constraintTop_toBottomOf="@+id/password_box_sutrener" />
 
             <EditText
-                android:id="@+id/confirm_box"
+                android:id="@+id/confirm_box_sutrener"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_marginTop="16dp"
@@ -131,10 +148,10 @@
                 android:padding="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/password_box" />
+                app:layout_constraintTop_toBottomOf="@+id/password_box_sutrener" />
 
             <Button
-                android:id="@+id/signup"
+                android:id="@+id/signup_sutrener"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="80dp"
@@ -145,7 +162,7 @@
                 android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/confirm_box" />
+                app:layout_constraintTop_toBottomOf="@+id/confirm_box_sutrener" />
 
             <LinearLayout
                 android:id="@+id/linearLayout"
@@ -155,10 +172,10 @@
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/signup">
+                app:layout_constraintTop_toBottomOf="@+id/signup_sutrener">
 
                 <TextView
-                    android:id="@+id/account_text"
+                    android:id="@+id/account_text_sutrener"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
@@ -166,7 +183,7 @@
                     android:textColor="@android:color/darker_gray" />
 
                 <TextView
-                    android:id="@+id/login_btn"
+                    android:id="@+id/login_btn_sutrener"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
@@ -177,7 +194,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/head_part2"
+                android:id="@+id/head_part2_sutrener"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -190,35 +207,35 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/klient_trener"
+                android:id="@+id/klient_sutrener"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:backgroundTint="#00FFFFFF"
                 android:text="Klient"
-                android:textColor="@color/purple_200"
+                android:textColor="#959595"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:cornerRadius="10dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/head_part2" />
+                app:layout_constraintTop_toBottomOf="@+id/head_part2_sutrener" />
 
             <Button
-                android:id="@+id/trener_trener"
+                android:id="@+id/trener_sutrener"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:backgroundTint="#00FFFFFF"
                 android:text="Trener"
-                android:textColor="#959595"
+                android:textColor="@color/purple_200"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:cornerRadius="10dp"
-                app:layout_constraintStart_toEndOf="@+id/klient_trener"
-                app:layout_constraintTop_toBottomOf="@+id/head_part2" />
+                app:layout_constraintStart_toEndOf="@+id/klient_sutrener"
+                app:layout_constraintTop_toBottomOf="@+id/head_part2_sutrener" />
 
             <Button
-                android:id="@+id/dietetyk_trener"
+                android:id="@+id/dietetyk_sutrener"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -228,8 +245,8 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:cornerRadius="10dp"
-                app:layout_constraintStart_toEndOf="@+id/trener_trener"
-                app:layout_constraintTop_toBottomOf="@+id/head_part2" />
+                app:layout_constraintStart_toEndOf="@+id/trener_sutrener"
+                app:layout_constraintTop_toBottomOf="@+id/head_part2_sutrener" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
